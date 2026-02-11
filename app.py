@@ -10,7 +10,8 @@ st.set_page_config(
 )
 
 # Load model (model is in SAME folder as app.py)
-model = joblib.load("data/asthma_model.pkl")
+model = joblib.load("asthma_model.pkl")
+
 
 
 # Custom CSS
@@ -68,3 +69,4 @@ if st.button("🔍 Predict"):
 
     else:
         st.success("✅ **No Asthma Risk Detected**")
+
