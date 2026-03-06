@@ -65,7 +65,7 @@ tab1, tab2 = st.tabs(["🔴 Live Sensor", "✍️ Manual Input"])
 # TAB 1 — LIVE SENSOR (ThingSpeak)
 # ══════════════════════════════════════════════════
 with tab1:
-    st.subheader("📡 Live Readings from ESP32 Sensor")
+    st.subheader("📡 Live Readings from MAX30102 & ESP32")
     st.write("Readings update automatically from your sensor!")
 
     # Fetch from ThingSpeak
@@ -224,4 +224,5 @@ with tab2:
             """, height=0)
         else:
             st.success("✅ **No Asthma Risk Detected**")
+
 
